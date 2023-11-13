@@ -11,6 +11,15 @@
 		B510C0092B01FBEB001DB2CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510C0082B01FBEB001DB2CF /* ContentView.swift */; };
 		B510C00B2B01FBEC001DB2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B510C00A2B01FBEC001DB2CF /* Assets.xcassets */; };
 		B510C00E2B01FBEC001DB2CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B510C00D2B01FBEC001DB2CF /* Preview Assets.xcassets */; };
+		B510C0172B01FE36001DB2CF /* StreetsOnCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510C0162B01FE36001DB2CF /* StreetsOnCloud.swift */; };
+		B510C0192B01FF99001DB2CF /* StreetsOnCloudRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510C0182B01FF99001DB2CF /* StreetsOnCloudRequestBuilder.swift */; };
+		B510C01B2B0204ED001DB2CF /* LotOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510C01A2B0204ED001DB2CF /* LotOverview.swift */; };
+		B5A8A8352B02949A008D3BA3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8A8342B02949A008D3BA3 /* HTTPMethod.swift */; };
+		B5A8A8372B0294AD008D3BA3 /* StreetsOnCloudEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8A8362B0294AD008D3BA3 /* StreetsOnCloudEndpoint.swift */; };
+		B5A8A83B2B029513008D3BA3 /* LotOverviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8A83A2B029513008D3BA3 /* LotOverviewResponse.swift */; };
+		B5A8A83E2B029567008D3BA3 /* LotOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8A83D2B029567008D3BA3 /* LotOverviewView.swift */; };
+		B5A8A8402B0298ED008D3BA3 /* AltLotOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8A83F2B0298ED008D3BA3 /* AltLotOverview.swift */; };
+		B5A8A8422B02BAF0008D3BA3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B5A8A8412B02BAF0008D3BA3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,17 @@
 		B510C0082B01FBEB001DB2CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B510C00A2B01FBEC001DB2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B510C00D2B01FBEC001DB2CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B510C0142B01FCA6001DB2CF /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		B510C0152B01FDBE001DB2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B510C0162B01FE36001DB2CF /* StreetsOnCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOnCloud.swift; sourceTree = "<group>"; };
+		B510C0182B01FF99001DB2CF /* StreetsOnCloudRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOnCloudRequestBuilder.swift; sourceTree = "<group>"; };
+		B510C01A2B0204ED001DB2CF /* LotOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotOverview.swift; sourceTree = "<group>"; };
+		B5A8A8342B02949A008D3BA3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B5A8A8362B0294AD008D3BA3 /* StreetsOnCloudEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsOnCloudEndpoint.swift; sourceTree = "<group>"; };
+		B5A8A83A2B029513008D3BA3 /* LotOverviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotOverviewResponse.swift; sourceTree = "<group>"; };
+		B5A8A83D2B029567008D3BA3 /* LotOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotOverviewView.swift; sourceTree = "<group>"; };
+		B5A8A83F2B0298ED008D3BA3 /* AltLotOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltLotOverview.swift; sourceTree = "<group>"; };
+		B5A8A8412B02BAF0008D3BA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,7 @@
 		B510BFFA2B01FBEB001DB2CF = {
 			isa = PBXGroup;
 			children = (
+				B5A8A8412B02BAF0008D3BA3 /* README.md */,
 				B510C0052B01FBEB001DB2CF /* ParkCSUSM */,
 				B510C0042B01FBEB001DB2CF /* Products */,
 			);
@@ -51,8 +72,13 @@
 		B510C0052B01FBEB001DB2CF /* ParkCSUSM */ = {
 			isa = PBXGroup;
 			children = (
+				B510C0152B01FDBE001DB2CF /* Info.plist */,
 				B510C0062B01FBEB001DB2CF /* ParkCSUSMApp.swift */,
+				B510C0142B01FCA6001DB2CF /* Secrets.xcconfig */,
 				B510C0082B01FBEB001DB2CF /* ContentView.swift */,
+				B5A8A83C2B029556008D3BA3 /* Views */,
+				B5A8A8332B029486008D3BA3 /* StreetsOnCloud */,
+				B5A8A8382B0294CF008D3BA3 /* Data Models */,
 				B510C00A2B01FBEC001DB2CF /* Assets.xcassets */,
 				B510C00C2B01FBEC001DB2CF /* Preview Content */,
 			);
@@ -65,6 +91,43 @@
 				B510C00D2B01FBEC001DB2CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5A8A8332B029486008D3BA3 /* StreetsOnCloud */ = {
+			isa = PBXGroup;
+			children = (
+				B510C0162B01FE36001DB2CF /* StreetsOnCloud.swift */,
+				B510C0182B01FF99001DB2CF /* StreetsOnCloudRequestBuilder.swift */,
+				B5A8A8362B0294AD008D3BA3 /* StreetsOnCloudEndpoint.swift */,
+				B5A8A8342B02949A008D3BA3 /* HTTPMethod.swift */,
+			);
+			path = StreetsOnCloud;
+			sourceTree = "<group>";
+		};
+		B5A8A8382B0294CF008D3BA3 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8A8392B0294DD008D3BA3 /* Response Models */,
+				B510C01A2B0204ED001DB2CF /* LotOverview.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		B5A8A8392B0294DD008D3BA3 /* Response Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8A83A2B029513008D3BA3 /* LotOverviewResponse.swift */,
+			);
+			path = "Response Models";
+			sourceTree = "<group>";
+		};
+		B5A8A83C2B029556008D3BA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8A83D2B029567008D3BA3 /* LotOverviewView.swift */,
+				B5A8A83F2B0298ED008D3BA3 /* AltLotOverview.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A8A8422B02BAF0008D3BA3 /* README.md in Resources */,
 				B510C00E2B01FBEC001DB2CF /* Preview Assets.xcassets in Resources */,
 				B510C00B2B01FBEC001DB2CF /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B510C01B2B0204ED001DB2CF /* LotOverview.swift in Sources */,
+				B5A8A83B2B029513008D3BA3 /* LotOverviewResponse.swift in Sources */,
+				B510C0192B01FF99001DB2CF /* StreetsOnCloudRequestBuilder.swift in Sources */,
+				B5A8A8352B02949A008D3BA3 /* HTTPMethod.swift in Sources */,
 				B510C0092B01FBEB001DB2CF /* ContentView.swift in Sources */,
+				B5A8A8402B0298ED008D3BA3 /* AltLotOverview.swift in Sources */,
+				B510C0172B01FE36001DB2CF /* StreetsOnCloud.swift in Sources */,
+				B5A8A83E2B029567008D3BA3 /* LotOverviewView.swift in Sources */,
+				B5A8A8372B0294AD008D3BA3 /* StreetsOnCloudEndpoint.swift in Sources */,
 				B510C0072B01FBEB001DB2CF /* ParkCSUSMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +219,7 @@
 /* Begin XCBuildConfiguration section */
 		B510C00F2B01FBEC001DB2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B510C0142B01FCA6001DB2CF /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -210,6 +283,7 @@
 		};
 		B510C0102B01FBEC001DB2CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B510C0142B01FCA6001DB2CF /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -275,6 +349,7 @@
 				DEVELOPMENT_TEAM = DD8G3E28HN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkCSUSM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +379,7 @@
 				DEVELOPMENT_TEAM = DD8G3E28HN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkCSUSM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

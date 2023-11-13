@@ -6,16 +6,39 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
+    
+    @ObservedObject var streetsOnCloud = StreetsOnCloud.shared
+    @State var useAltView: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView(.vertical) {
+                VStack {
+                    ForEach(self.streetsOnCloud.overview, id: \.id) { lot in
+                        if self.useAltView {
+                            AltLotOverviewView(lot: lot)
+                        } else {
+                            LotOverviewView(for: lot)
+                        }
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+            .navigationTitle("Park CSUSM")
+            .toolbar {
+                Button {
+                    self.useAltView.toggle()
+                } label: {
+                    Image(systemName: "rectangle.2.swap")
+                }
+            }
+            .onAppear() {
+                self.streetsOnCloud.refresh()
+            }
         }
-        .padding()
     }
 }
 
